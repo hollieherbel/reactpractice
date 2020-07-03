@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
-import Align from "./align";
-import Hide from "./hide"
-import NumberChange from "./numberchange";
-import SizeChange from "./sizechange";
-import ColorChange from "./colorchange";
+import Align from "./hooks/align";
+import Hide from "./hooks/hide"
+import NumberChange from "./hooks/numberchange";
+import SizeChange from "./hooks/sizechange";
+import ColorChange from "./hooks/colorchange";
+import Clock from "./hooks/clock"
 
 export default class App extends Component {
   render() {
@@ -18,6 +19,8 @@ export default class App extends Component {
         <SizeChange />
         <br />
         <ColorChange />
+        <br />
+        <Clock />
       </div>
     );
   }
